@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Task</title>
+    <style>
+        div {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid grey;
+            width:50%;
+        }
+        h1{
+            border : 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Maker</h1>
+    <!-- onchange="selectInput(this.value) -->
+    <select id="inputField" name="inputField">
+        <option value="default" selected>Select Input Field</option>
+        <option value="text">Text</option>
+        <option value="radioButton">Radio Box</option>
+        <option value="checkButton">Check Box</option>
+        <option value="date">Date</option>
+        <option value="email">E-mail</option>
+        <option value="dropdown">DropDown</option>
+        <!-- <option value="submit">Submit</option> -->
+    </select>
+
+    <label for="count">Count</label>
+    <input id="count" value="1">
+    <label for="position">Position</label>
+    <input id="position">
+
+    <button value="button" id="createInput" onclick="createInput()">Create Input</button>
+    <!-- create arr for form -->
+    <button value="button" id="createForm" onclick="createForm()">Create Form</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <form id="inputForm" action="javascript:;">
+        <h1 contentEditable = true>Form Name</h1>
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
